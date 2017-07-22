@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adamapps.a4snaps.ChallengeBuilder">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool"/>
+
+    <Button
+        android:id="@+id/selectedWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#50ffffff"
+        android:text="Selected Word: "
+        android:textColor="@color/textBlack"
+        android:clickable="true"
+        android:onClick="selectWord"/>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/picture_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedWord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#c0c0c0"
+        app:columnCount="2"
+        app:rowCount="2"
+        app:useDefaultMargins="true">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@color/textWhite"
+            app:layout_column="0"
+            app:layout_row="0"
+            android:onClick="image1"/>
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@color/textWhite"
+            app:layout_column="1"
+            app:layout_row="0"
+            android:onClick="image2"/>
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@color/textWhite"
+            app:layout_column="0"
+            app:layout_row="1"
+            android:onClick="image3"/>
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@color/textWhite"
+            app:layout_column="1"
+            app:layout_row="1"
+            android:onClick="image4"/>
+
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#50ffffff"
+        android:text="SEND CHALLENGE"
+        android:onClick="send"/>
+
+</RelativeLayout>

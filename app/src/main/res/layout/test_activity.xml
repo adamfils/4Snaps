@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/answer_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Answer"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:id="@+id/answer_layout_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choiceGrid"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp">
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/choiceGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#c0c0c0"
+        app:columnCount="12"
+        app:rowCount="2"
+        app:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/word1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="B"
+            android:textSize="25sp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/word2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="O"
+            android:textSize="25sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/word3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="T"
+            android:textSize="25sp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/word4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="A"
+            android:textSize="25sp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/word5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="Y"
+            android:textSize="25sp"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/word6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="K"
+            android:textSize="25sp"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/word7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="V"
+            android:textSize="25sp"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/word8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="D"
+            android:textSize="25sp"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/word9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="Z"
+            android:textSize="25sp"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/word10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="Y"
+            android:textSize="25sp"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/word11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="V"
+            android:textSize="25sp"
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/word12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/textWhite"
+            android:text="G"
+            android:textSize="25sp"
+            app:layout_column="5"
+            app:layout_row="1" />
+
+    </android.support.v7.widget.GridLayout>
+
+</RelativeLayout>
